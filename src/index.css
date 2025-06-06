@@ -4,89 +4,88 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 100%; /* White #FFFFFF */
+    --foreground: 0 0% 20%; /* Dark Gray #333333 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 97%; /* Off-white #F7F7F7 */
+    --card-foreground: 0 0% 20%; /* Dark Gray #333333 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White #FFFFFF */
+    --popover-foreground: 0 0% 20%; /* Dark Gray #333333 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 122 39% 60%; /* Green #66BB6A */
+    --primary-foreground: 0 0% 10%; /* Very Dark Gray #1A1A1A */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 20% 94%; /* Light Cool Gray #EEF2F6 */
+    --secondary-foreground: 0 0% 25%; /* Darker Gray #404040 */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 96%; /* Even Lighter Cool Gray #F5F7FA */
+    --muted-foreground: 0 0% 40%; /* Medium Gray #666666 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 51 100% 50%; /* Yellow #FFD700 */
+    --accent-foreground: 0 0% 10%; /* Very Dark Gray #1A1A1A */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%; /* Softer Red #E53E3E */
+    --destructive-foreground: 0 0% 98%; /* Off-white #FAFAFA */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 85%; /* Light Gray #D9D9D9 */
+    --input: 0 0% 85%; /* Light Gray #D9D9D9 */
+    --ring: 51 100% 50%; /* Yellow #FFD700 (Accent) */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* 8px */
 
-    --sidebar-background: 0 0% 98%;
+    /* Updated Sidebar Vars - Light Mode */
+    --sidebar-background: 0 0% 97%; /* from --card */
+    --sidebar-foreground: 0 0% 20%; /* from --foreground */
+    --sidebar-primary: 122 39% 60%; /* from --primary */
+    --sidebar-primary-foreground: 0 0% 10%; /* from --primary-foreground */
+    --sidebar-accent: 51 100% 50%; /* from --accent */
+    --sidebar-accent-foreground: 0 0% 10%; /* from --accent-foreground */
+    --sidebar-border: 0 0% 85%; /* from --border */
+    --sidebar-ring: 51 100% 50%; /* from --ring */
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Typography */
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 12%; /* Charcoal #1E1E1E */
+    --foreground: 0 0% 95%; /* Light Gray #F2F2F2 */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 17%; /* Darker Charcoal #2C2C2C */
+    --card-foreground: 0 0% 95%; /* Light Gray #F2F2F2 */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 17%; /* Darker Charcoal #2C2C2C */
+    --popover-foreground: 0 0% 95%; /* Light Gray #F2F2F2 */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 122 39% 60%; /* Green #66BB6A */
+    --primary-foreground: 0 0% 10%; /* Very Dark Gray #1A1A1A */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 15% 25%; /* Dark Cool Gray #333B42 */
+    --secondary-foreground: 0 0% 85%; /* Light Gray #D9D9D9 */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 15% 20%; /* Very Dark Cool Gray #293038 */
+    --muted-foreground: 0 0% 60%; /* Medium Gray #999999 */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 51 100% 50%; /* Yellow #FFD700 */
+    --accent-foreground: 0 0% 10%; /* Very Dark Gray #1A1A1A */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 45%; /* Darker Red #D32F2F */
+    --destructive-foreground: 0 0% 98%; /* Off-white #FAFAFA */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 25%; /* Dark Gray #404040 */
+    --input: 0 0% 25%; /* Dark Gray #404040 */
+    --ring: 51 100% 50%; /* Yellow #FFD700 (Accent) */
+
+    /* Updated Sidebar Vars - Dark Mode */
+    --sidebar-background: 0 0% 17%; /* from dark --card */
+    --sidebar-foreground: 0 0% 95%; /* from dark --foreground */
+    --sidebar-primary: 122 39% 60%; /* from dark --primary */
+    --sidebar-primary-foreground: 0 0% 10%; /* from dark --primary-foreground */
+    --sidebar-accent: 51 100% 50%; /* from dark --accent */
+    --sidebar-accent-foreground: 0 0% 10%; /* from dark --accent-foreground */
+    --sidebar-border: 0 0% 25%; /* from dark --border */
+    --sidebar-ring: 51 100% 50%; /* from dark --ring */
   }
 }
 
@@ -97,5 +96,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
